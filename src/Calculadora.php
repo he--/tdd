@@ -15,7 +15,7 @@ class Calculadora
 	{
 		return $a + $b;
 	}
-	
+	 
 	public function subtracao($a , $b)
 	{
 		return $a - $b;

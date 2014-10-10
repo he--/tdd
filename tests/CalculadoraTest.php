@@ -22,7 +22,7 @@ class CalculadoraTest extends AbstractFizzBuzzTestCase
 		$this->assertEquals($calculadora->soma(0 , 25.5), 25.5);
 		$this->assertEquals($calculadora->soma(12 , -25.5), -13.5);
 		
-	}
+	} 
 	
 	public function testSubtracao()
 	{
