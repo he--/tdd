@@ -79,6 +79,7 @@ class CalculadoraTest extends AbstractFizzBuzzTestCase
 	{
 		$calculadora = new \Vox\Treinamento\Tdd\Calculadora();
 		$this->assertEquals($calculadora->raizQuadrada(4), 2);
+		$this->assertEquals($calculadora->raizQuadrada(5), 2.2360679774998);
 	}
 	
 	/**
