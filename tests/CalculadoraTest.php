@@ -41,7 +41,6 @@ class CalculadoraTest extends AbstractFizzBuzzTestCase
 	{
 		$calculadora = new \Vox\Treinamento\Tdd\Calculadora();
 		$this->assertEquals($calculadora->divisao(4 , 0), 2);
-		$this->assertEquals($calculadora->divisao(4 ,-1), 2);
 	}
 	
 	/**
@@ -75,6 +74,22 @@ class CalculadoraTest extends AbstractFizzBuzzTestCase
 		$this->assertEquals($calculadora->somalogica(false , false), false);
 		$this->assertEquals($calculadora->somalogica(false , true), false);
 	}
+	
+	public function testRaizQuadrada() 
+	{
+		$calculadora = new \Vox\Treinamento\Tdd\Calculadora();
+		$this->assertEquals($calculadora->raizQuadrada(4), 2);
+	}
+	
+	/**
+	 * @expectedException \InvalidArgumentException
+	 */
+	public function testRaizQuadradaNegativa()
+	{
+		$calculadora = new \Vox\Treinamento\Tdd\Calculadora();
+		$this->assertEquals($calculadora->raizQuadrada(-4), 2);
+	}
+	 
 	
 	
 	

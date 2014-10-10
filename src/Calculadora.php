@@ -31,12 +31,7 @@ class Calculadora
 		}
 		return $dividendo / $divisor;
 	}
-	/**
-	 * 
-	 * @param unknown $a
-	 * @param unknown $b
-	 * @return number
-	 */
+
 	public function multiplicacao($a , $b)
 	{
 		return $a * $b;
@@ -45,5 +40,13 @@ class Calculadora
 	public function somaLogica($a , $b)
 	{
 		return $a && $b;
+	}
+	
+	public function raizQuadrada($a)
+	{
+		if ( $a < 0) {
+			throw new \InvalidArgumentException('Não existe raiz quadra de numeros negativos.');
+		}
+		return sqrt($a);
 	}
 }
